@@ -17,7 +17,7 @@ public class ParkingApp {
             new FileInput(args[0], commandFactory).run();
         }
         else
-            throw new ParkingException(ErrorMessage.INVALID_ENTRY);
+            throw new ParkingException(ErrorMessage.INVALID_INPUT_FILE);
     }
 
 }

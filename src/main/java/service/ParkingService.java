@@ -7,13 +7,15 @@ import model.Reservation;
 import output.OutputMessages;
 import repository.ParkingRepository;
 
-import java.util.Optional;
-
 public class ParkingService {
     private final ParkingRepository parkingRepository;
 
     public ParkingService() {
         this.parkingRepository = new ParkingRepository();
+    }
+
+    public ParkingService(ParkingRepository parkingRepository) {
+        this.parkingRepository = parkingRepository;
     }
 
     public void setParkingLotCapacity(ParkingType parkingLotKey, int capacity) {

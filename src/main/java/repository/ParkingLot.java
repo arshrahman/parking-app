@@ -33,8 +33,8 @@ public abstract class ParkingLot {
         return lotId;
     }
 
-    public boolean release(int lotId) {
-        return parkingStrategy.addLot(lotId);
+    public void release(int lotId) {
+        parkingStrategy.addLot(lotId);
     }
 
     public double calculateFare(Instant start, Instant end) {

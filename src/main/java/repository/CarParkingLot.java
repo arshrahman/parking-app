@@ -1,6 +1,5 @@
 package repository;
 
-import repository.ParkingLot;
 import strategy.parking.ParkingStrategy;
 import strategy.pricing.PricingStrategy;
 

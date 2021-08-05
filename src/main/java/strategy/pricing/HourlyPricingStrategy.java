@@ -5,7 +5,7 @@ import java.time.Instant;
 import static java.time.temporal.ChronoUnit.MINUTES;
 
 public class HourlyPricingStrategy implements PricingStrategy {
-    final private double rate;
+    private final double rate;
 
     public HourlyPricingStrategy(double rate) {
         this.rate = rate;

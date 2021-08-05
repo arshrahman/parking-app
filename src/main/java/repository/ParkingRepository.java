@@ -34,7 +34,7 @@ public class ParkingRepository {
         return occupiedLots.get(vehicleNo);
     }
 
-    public void putReservation(Reservation reservation) throws ParkingException {
+    public void putReservation(Reservation reservation) {
         occupiedLots.put(reservation.getVehicleNo(), reservation);
     }
 
@@ -50,8 +50,8 @@ public class ParkingRepository {
         return getParkingLot(parkingType).reserve();
     }
 
-    public boolean releaseLot(Lot lot) {
-        return getParkingLot(lot.getParkingType()).release(lot.getLotId());
+    public void releaseLot(Lot lot) {
+        getParkingLot(lot.getParkingType()).release(lot.getLotId());
     }
 
     public double getPrice(ParkingType parkingType, Instant start, Instant end) {

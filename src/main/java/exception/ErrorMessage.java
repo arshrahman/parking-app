@@ -1,7 +1,7 @@
 package exception;
 
 public enum ErrorMessage {
-    INVALID_ENTRY("Please pass in input file"),
+    INVALID_INPUT_FILE("Please pass in input file"),
     INVALID_COMMAND("Please pass in valid command with arguments"),
     INVALID_COMMAND_ARGS("Please pass in valid command arguments"),
     INVALID_PARKING_LOT_SIZE("Please pass in valid parking lot size"),
