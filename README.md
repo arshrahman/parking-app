@@ -14,15 +14,15 @@ A Parking system app written in Java with command line interface.
 
 ### Running App
 
-1. Run the jar file and pass the input file in the command line. Open terminal and run the following snippet
+1. Run the jar file via terminal and pass the input file as argument. Open terminal and run the following snippet
 
         cd parking-app
         java -jar parking-app.jar valid_input.txt
 
-2. Import the project in your preferred IDE and run the app. Please pass in the input file as the command line arguments.
+2. Import the project in your preferred IDE and run the app. Pass the input file as command line argument.
 
-        valid_input.txt
-        invalid_input.txt
+        Positive flow: valid_input.txt
+        Negative flow: invalid_input.txt
 
 #### Sample input
 
@@ -35,13 +35,13 @@ A Parking system app written in Java with command line interface.
     Enter car SSD9281L 1613549740
     Exit SDW2111W 1613559745
 
-The first line creates a car parking lot of size `3` and motorcycle parking lot of size `4`. The app will throw exception for non-positive values.
+The first line creates a `car` parking lot of size `3` and `motorcycle` parking lot of size `4`. The app will throw exception for non-positive values.
 
-Enter and Exit are command keywords to park and unpark vehicle. 
+`Enter` and `Exit` are command keywords to park and unpark the vehicle. 
 
-Enter command is followed by vehicle type (`car` or `motorcycle`), license number and `timestamp` of entering time.
+`Enter` command is followed by vehicle type (`car` or `motorcycle`), license number and `timestamp` of entering time.
 
-Exit command is followed by license number and `timestamp` of exiting time.
+`Exit` command is followed by license number and `timestamp` of exiting time.
 
 #### Sample output
 
@@ -57,7 +57,7 @@ Exit command is followed by license number and `timestamp` of exiting time.
 
 `Reject` occurs when parking is full or vehicle is already parked
 
-Upon `Exit`, the lot will be released and fare will be calculated. `$2/hour` for `Car` and `$1/hour` for `Motorcycle`. The hours will be rounded up before calculation
+Upon `Exit`, the lot will be released and fare will be calculated. Parking charges are `$2/hour` for `Car` and `$1/hour` for `Motorcycle`. The hours will be rounded up before calculation.
 
 ## System Design
 
