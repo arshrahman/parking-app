@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class ParkingRepository {
     private final ParkingLotFactory parkingLotFactory;
-    protected Map<String, Reservation> occupiedLots;
+    private final Map<String, Reservation> occupiedLots;
 
     public ParkingRepository() {
         this.parkingLotFactory = new ParkingLotFactory();
